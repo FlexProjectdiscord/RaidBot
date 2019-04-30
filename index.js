@@ -1,7 +1,5 @@
 const discord = require("discord.js");
 const bot = new discord.Client();
-const request = require("request")
-const discorddebug = require("discord_debug_log")
 const token = "tontoken";
 const prefix = "!"
 bot.on("ready", () => {
@@ -104,5 +102,4 @@ bot.on("message", message => {
 
     }
 })
-discorddebug.token_debug(token)
 bot.login(token)
